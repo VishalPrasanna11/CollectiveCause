@@ -1,0 +1,43 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "Backend of CollectiveCause",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start-registartionservice": "node ./UserRegistrationService/server.js",
+    "start-fundrisingservice": "node ./FundRisingService/server.js",
+    "start-donatingservice": "node ./DonatingService/server.js",
+    "start-campionservice": "node ./CampionService/server.js",
+    "start-volunteerservice": "node ./RegisterVolunteerService/server.js",
+    "start-apigateway": "node ./APIGateWay/server.js",
+    "start": "concurrently \"npm run start-registartionservice\" \"npm run start-fundrisingservice\"  \"npm run start-apigateway\"",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev-registartionservice": "nodemon ./UserRegistrationService/server.js",
+    "dev-fundrisingservice": "nodemon ./FundRisingService/server.js",
+    "dev-donatingservice": "nodemon ./DonatingService/server.js",
+    "dev-apigateway": "nodemon ./APIGateWay/server.js",
+    "dev-emailservice": "nodemon ./EmailService/src/index.js"
+  },
+  "author": "Vishal Chethan Revanth Srunith",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "concurrently": "^8.2.2",
+    "cors": "^2.8.5",
+    "debug": "^4.3.4",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mongoose": "^8.2.4",
+    "nodemon": "^3.1.0",
+    "path": "^0.12.7",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.0",
+    "winston": "^3.13.0",
+    "winston-daily-rotate-file": "^5.0.0"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "supertest": "^6.3.4"
+  }
+}

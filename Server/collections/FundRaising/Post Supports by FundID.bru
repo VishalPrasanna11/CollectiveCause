@@ -1,0 +1,18 @@
+meta {
+  name: Post Supports by FundID
+  type: http
+  seq: 6
+}
+
+put {
+  url: http://localhost:8002/fundrising/addsupportors/661c862e1ae33a39da802914
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+        "name": "Vishal Prasanna",
+        "donated_amount": 100
+      }
+}

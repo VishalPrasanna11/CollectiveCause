@@ -1,0 +1,15 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(./assets/bg05.svg);
+    /* background-color: #CDD193; */
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+.pac-container {
+    /* width: inherit !important; */
+    height: 300px;
+}

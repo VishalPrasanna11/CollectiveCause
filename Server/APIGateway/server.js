@@ -1,0 +1,1 @@
+console.log("Server.js is running from API Gateway");
