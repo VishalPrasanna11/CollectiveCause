@@ -6,7 +6,7 @@ interface UpdateFormPayload {
   formData: FundRaisingForm;
 }
 
-const baseURL = "http://localhost:8002/fundraising/";
+const baseURL = "http://localhost:8080/fundraising/";
 
 export const submitFormDataAsync = createAsyncThunk(
   'fundRaisingForm/submitFormDataAsync',

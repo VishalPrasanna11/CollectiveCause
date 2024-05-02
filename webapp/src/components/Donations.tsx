@@ -53,7 +53,7 @@ const Donations = () => {
   const navigate = useNavigate();
   const categories = ["Education", "Medical", "Disaster","Others"];
   const fetchData = async () => {
-    const res = await fetch("http://localhost:8002/fundraising/");
+    const res = await fetch("http://localhost:8080/fundraising/");
     const data = await res.json();
     setFundraisingData(data);
     
