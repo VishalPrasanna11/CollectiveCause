@@ -22,7 +22,7 @@ app.use(bodyParser.urlencoded({ limit: '50mb', extended: true }));
 app.use(express.json());
 // app.use('/api-docs', swaggerUI.serve, swaggerUI.setup(swaggerSpec));
 app.use('/fundraising', router);
-
+console.log('Connected to MongoDB Atlas');
 
 mongoose.connect(MONGODB_URI)
   .then(() => {
